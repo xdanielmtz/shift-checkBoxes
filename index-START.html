@@ -76,7 +76,7 @@
     <div class="item">
       <input type="checkbox">
       <p>Everything in between should also be set to checked</p>
-    </div>
+    </div>˙
     <div class="item">
       <input type="checkbox">
       <p>Try to do it without any libraries</p>
@@ -96,6 +96,19 @@
   </div>
 
 <script>
+const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
+
+function handleCheck(e) {
+  console.log(e);
+}
+
+checkboxes.forEach(checkbox => checkbox.addEventListener("click", handleCheck));
+
+
+
+
+
 </script>
+
 </body>
 </html>
